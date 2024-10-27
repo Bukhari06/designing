@@ -1,36 +1,35 @@
 import Image from "next/image";
+import styles from './header.module.css';
+import Link from "next/link";
 
 const Header = () => {
       return (
-        <header className="bg-black text-white p-5">
-<div className= "container mx-auto flex justify-between item-center">
-   
+        <header>
+
+   <div className={styles.header}>
                    <Image src="/logo1.png"
                     alt=""
                     width={100}
-                    height={400} 
+                    height={400} className="styles.logo"
                />
 
-
-    <h1 className="text-3xl font-bold">
-    𝓜𝔂 𝓝𝓮𝔁𝓽.𝓳𝓼 𝓦𝓮𝓫𝓼𝓲𝓽𝓮</h1>
-    <nav>
-    <ul className="flex space-x-6">
-
-    <li>
-    <a href="/" className="hover:text-red-500">Home</a>
-</li>
-
-<li>
-    <a href="/" className="hover:text-red-500">About</a>
-</li>
-
-<li>
-    <a href="/" className="hover:text-red-500">Contact</a>
-</li>
-    </ul>
+<nav>
+    <ul className={styles.navList}>
+            <li><a href= "/" className={styles.link}>Home</a></li>
+            <li><Link href="/" className={styles.link}>About</Link></li>
+            <li><Link href="/" className={styles.link}>Services</Link></li>
+            <li><Link href="/" className={styles.link}>Contact</Link></li>
+          </ul>
 </nav>
-    </div>
+</div>
+
+
+
+<h1 className={styles.title}>
+𝕎𝕖𝕝𝕔𝕠𝕞𝕖 𝕥𝕠 𝕄𝕪 𝕎𝕖𝕓𝕊𝕚𝕥𝕖...
+</h1>
+    
+      
 </header>
       );
 

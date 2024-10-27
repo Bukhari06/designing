@@ -1,0 +1,13 @@
+.hero {
+    background-color: #000;
+    font-size: larger;
+    background-size: 100px;
+    background-color: #96CEB4;
+    color: black;
+    padding: 100px;
+    text-align: center;
+    border-radius: 50px;
+    border-width: 100px;
+    border-color: orange;
+    border-style: ridge;
+}

@@ -1,11 +1,14 @@
-//components.Footer.tsx
+import React from "react";
+import styles from './footer.module.css';
 
 const Footer = () => {
     return (
 
         
-        <footer className="bg-black text-white p-5 mt-auto">
+        <footer>
+               <div className={styles.footer}>
             <p>&copy; 2024 𝓑𝔂: 𝓑𝓾𝓴𝓱𝓪𝓻𝓲</p>
+            </div>
         </footer>
     );
 };

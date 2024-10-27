@@ -1,0 +1,42 @@
+.header {
+    background-color: black;
+    padding: 20px;
+text-align: center ;
+
+}
+.title{
+ font-size: 24px;
+ color: bisque;
+ 
+
+ text-align: left;
+}
+.logo{
+    margin-right: 20px;
+}
+
+.navList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+
+.link{
+    color: b;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: bisque;
+    border-radius: 10px;
+    transition: backgroung-color 0.3s;
+    text-align: center;
+
+
+    
+}
+.link:hover{
+    background-color: orange;
+    color: #96CEB4;
+}
